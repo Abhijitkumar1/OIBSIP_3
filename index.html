@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temprature Convertor</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="TempratureConvertor.css">
+       </head>
+       <body>
+        <style>
+            body {
+              background-image: url('tem2.jpg');
+            }
+            </style>
+            
+        <h2>Temperature Converter</h2>
+<p> KELVIN to FAHRENHEIT to CELSIUS</p>
+<p>
+  
+    <label>Kelvin</label>
+    <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+  </p>
+  
+  <p><p>
+    <label>Celsius</label>
+    <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+  </p</p>
+  <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+  <button class="button" onclick="convertFahrenheit()">Convert Fahrenheit</button> 
+  <button class="button" onclick="convertCelsius()">Convert Celsius</button>   
+  <button class="button" onclick="convertkelvin()">Convert Kelvin</button> 
+  <br><br>
+  <button class="reset" id="reset" onclick="reset()">Reset</button></p>
+        <script src="script.js"></script>
+       </body>
+</html>
